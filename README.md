@@ -25,6 +25,7 @@ The first revision was designed as a proof-of-concept. It is designed on a simpl
 * 5-16 volt input (2-4s lipo)
 * 20 amps continuous current (*not yet tested*)
 * Dimensions: 41mm x 57mm (1.60" x 2.25")
+* MOSFETs: Vishay SiR158DP
 
 ##Rev.2
 
