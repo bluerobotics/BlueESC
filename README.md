@@ -5,12 +5,12 @@ The BlueESC is a simple, open-source electronic speed controller for three-phase
 
 The hardware is licensed under GPLv3. It was inspired by and draws from other open-source ESC projects including [AfroESC](https://code.google.com/p/afrodevices/), [WiiESC](https://code.google.com/p/wii-esc/), and others. We owe a big thanks to everyone who has shared their open-source ESC designs and firmware.
 
-We also thank Bernhard Konze and SimonK for the [tgy firmware](http://github.com/sim-/tgy). Please see the firmware license at the top of [tgy.asm](https://github.com/rjehangir/tgy/blob/master/tgy.asm).
+We also thank Bernhard Konze and SimonK for the [tgy firmware](http://github.com/sim-/tgy). Please see the firmware license at the top of [tgy.asm](https://github.com/bluerobotics/tgy/blob/master/tgy.asm). The firmware configuration files for the BlueESC are maintained in [our fork of the tgy project](http://github.com/bluerobotics/tgy).
 
 ##Features
 
 * Atmega8 microcontroller
-* PWM, I2C, and Serial signal interfaces
+* PWM, I2C, and serial signal interfaces
 * 5-16 volt input (2-4s lipo)
 * Reprogrammable via PWM pin using bootloader
 * Status and warning LED indicators
