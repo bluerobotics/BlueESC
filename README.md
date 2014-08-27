@@ -45,13 +45,13 @@ The second revision is designed to work with the [BlueRobotics T100 Thruster](ht
 The BlueESC can be flashed using any AVR ISP programmer.
 
 ```bash
-avrdude -c [programmer] -u -p m8 -U flash:w:bluesc.hex:i 
+avrdude -c [programmer] -p m8 -U flash:w:bluesc.hex:i 
 ```
 
 The fuses should be set per the instructions in the [tgy](http://github.com/sim-/tgy) instructions.
 
 ```bash
-avrdude -c [programmer] -u -p m8 -U lfuse:w:0x3f:m -U hfuse:w:0xca:m
+avrdude -c [programmer] -p m8 -U lfuse:w:0x3f:m -U hfuse:w:0xca:m
 ```
 
 ##Firmware Flashing Through Bootloader
@@ -65,7 +65,7 @@ make program_tgy_bluesc
 It can also be done with avrdude and the compiled hex files as follows.
 
 ```bash
-avrdude -c stk500v2 -b 9600 -P [programmer port] -u -p m8 -U flash:w:bluesc.hex:i
+avrdude -c stk500v2 -b 9600 -P [programmer port] -p m8 -U flash:w:bluesc.hex:i
 ```
 
 ##I2C Commands and Address
