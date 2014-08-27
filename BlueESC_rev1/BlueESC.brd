@@ -1074,12 +1074,24 @@ Please make sure your boards conform to these design rules.</description>
 <element name="Q3" library="SparkFun-DiscreteSemi" package="SOT23" value="" x="25.4" y="27.94" rot="R270"/>
 <element name="R31" library="SparkFun-Resistors" package="0603-RES" value="100" x="30.48" y="20.32" rot="R180"/>
 <element name="R32" library="SparkFun-Resistors" package="0603-RES" value="10K" x="30.48" y="17.78" rot="R180"/>
-<element name="Q4" library="transistor-fet-bobstarr" package="POWERPAK-SO-08" value="SI7370" x="5.08" y="21.59"/>
-<element name="Q5" library="transistor-fet-bobstarr" package="POWERPAK-SO-08" value="SI7370" x="5.08" y="13.97" rot="R90"/>
-<element name="Q6" library="transistor-fet-bobstarr" package="POWERPAK-SO-08" value="SI7370" x="15.24" y="21.59"/>
-<element name="Q7" library="transistor-fet-bobstarr" package="POWERPAK-SO-08" value="SI7370" x="15.24" y="13.97" rot="R90"/>
-<element name="Q8" library="transistor-fet-bobstarr" package="POWERPAK-SO-08" value="SI7370" x="25.4" y="21.59"/>
-<element name="Q9" library="transistor-fet-bobstarr" package="POWERPAK-SO-08" value="SI7370" x="25.4" y="13.97" rot="R90"/>
+<element name="Q4" library="transistor-fet-bobstarr" package="POWERPAK-SO-08" value="SI7370" x="5.08" y="21.59" smashed="yes">
+<attribute name="NAME" x="1.5875" y="19.685" size="1.016" layer="25" ratio="18" rot="R90"/>
+</element>
+<element name="Q5" library="transistor-fet-bobstarr" package="POWERPAK-SO-08" value="SI7370" x="5.08" y="13.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="6.985" y="10.4775" size="1.016" layer="25" ratio="18" rot="R180"/>
+</element>
+<element name="Q6" library="transistor-fet-bobstarr" package="POWERPAK-SO-08" value="SI7370" x="15.24" y="21.59" smashed="yes">
+<attribute name="NAME" x="11.7475" y="19.685" size="1.016" layer="25" ratio="18" rot="R90"/>
+</element>
+<element name="Q7" library="transistor-fet-bobstarr" package="POWERPAK-SO-08" value="SI7370" x="15.24" y="13.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="17.145" y="10.4775" size="1.016" layer="25" ratio="18" rot="R180"/>
+</element>
+<element name="Q8" library="transistor-fet-bobstarr" package="POWERPAK-SO-08" value="SI7370" x="25.4" y="21.59" smashed="yes">
+<attribute name="NAME" x="21.9075" y="19.685" size="1.016" layer="25" ratio="18" rot="R90"/>
+</element>
+<element name="Q9" library="transistor-fet-bobstarr" package="POWERPAK-SO-08" value="SI7370" x="25.4" y="13.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="27.305" y="10.4775" size="1.016" layer="25" ratio="18" rot="R180"/>
+</element>
 <element name="U2" library="SparkFun-PowerIC" package="SOT23-5" value="V_REG_LDOSMD" x="35.56" y="45.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="33.401" y="44.831" size="0.4064" layer="25" rot="R90"/>
 </element>

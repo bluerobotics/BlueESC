@@ -9812,14 +9812,26 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="R31" gate="G$1" x="396.24" y="76.2"/>
 <instance part="R32" gate="G$1" x="414.02" y="68.58" rot="R90"/>
 <instance part="GND16" gate="1" x="414.02" y="58.42"/>
-<instance part="Q4" gate="G$1" x="243.84" y="27.94"/>
-<instance part="Q5" gate="G$1" x="243.84" y="10.16"/>
+<instance part="Q4" gate="G$1" x="243.84" y="27.94" smashed="yes">
+<attribute name="NAME" x="232.41" y="30.48" size="1.778" layer="95"/>
+</instance>
+<instance part="Q5" gate="G$1" x="243.84" y="10.16" smashed="yes">
+<attribute name="NAME" x="232.41" y="12.7" size="1.778" layer="95"/>
+</instance>
 <instance part="GND18" gate="1" x="254" y="-2.54"/>
-<instance part="Q6" gate="G$1" x="327.66" y="27.94"/>
-<instance part="Q7" gate="G$1" x="327.66" y="10.16"/>
+<instance part="Q6" gate="G$1" x="327.66" y="27.94" smashed="yes">
+<attribute name="NAME" x="316.23" y="30.48" size="1.778" layer="95"/>
+</instance>
+<instance part="Q7" gate="G$1" x="327.66" y="10.16" smashed="yes">
+<attribute name="NAME" x="316.23" y="12.7" size="1.778" layer="95"/>
+</instance>
 <instance part="GND19" gate="1" x="337.82" y="-2.54"/>
-<instance part="Q8" gate="G$1" x="411.48" y="27.94"/>
-<instance part="Q9" gate="G$1" x="411.48" y="10.16"/>
+<instance part="Q8" gate="G$1" x="411.48" y="27.94" smashed="yes">
+<attribute name="NAME" x="400.05" y="30.48" size="1.778" layer="95"/>
+</instance>
+<instance part="Q9" gate="G$1" x="411.48" y="10.16" smashed="yes">
+<attribute name="NAME" x="400.05" y="12.7" size="1.778" layer="95"/>
+</instance>
 <instance part="GND20" gate="1" x="421.64" y="-2.54"/>
 <instance part="U2" gate="G$1" x="55.88" y="38.1"/>
 <instance part="C9" gate="G$1" x="86.36" y="33.02"/>

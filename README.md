@@ -15,6 +15,7 @@ We also thank Bernhard Konze and SimonK for the [tgy firmware](http://github.com
 * Reprogrammable via PWM pin using bootloader
 * Status and warning LED indicators
 * Very simple: No battery-eliminator-circuit (BEC), no limiting
+* N-Channel MOSFETs
 
 ##Rev.1
 
@@ -25,7 +26,7 @@ The first revision was designed as a proof-of-concept. It is designed on a simpl
 * 5-16 volt input (2-4s lipo)
 * 20 amps continuous current (*not yet tested*)
 * Dimensions: 41mm x 57mm (1.60" x 2.25")
-* MOSFETs: Vishay SiR158DP
+* MOSFETs: Vishay SiR158DP (N-channel)
 
 ##Rev.2
 
