@@ -24,7 +24,7 @@ The first revision was designed as a proof-of-concept. It is designed on a simpl
 ###Specifications
 
 * 5-16 volt input (2-4s lipo)
-* 20 amps continuous current (*not yet tested*)
+* 25 amps continuous current (*not yet tested*)
 * Dimensions: 41mm x 57mm (1.60" x 2.25")
 * MOSFETs: Vishay SiR158DP (N-channel)
 
@@ -35,8 +35,8 @@ The second revision is designed to work with the [BlueRobotics T100 Thruster](ht
 ###Specifications (*subject to change*)
 
 * 5-16 volt input
-* 20 amps continuous current (air)
-* 30 amps continuous current (water)
+* 25 amps continuous current (air)
+* 35 amps continuous current (water)
 * Enclosure diameter: 40.3 mm (1.59")
 * Enclosure length: 13 mm (0.5")
 
