@@ -1,6 +1,8 @@
 BlueESC
 =======
 
+![BlueESC Rev1 Prototype](https://github.com/bluerobotics/BlueESC/images/blueesc-rev1-1.jpg "BlueESC Rev1 Prototype")
+
 The BlueESC is a simple, open-source electronic speed controller for three-phase brushless motors. It is designed to run the [SimonK firmware](http://github.com/sim-/tgy) on an Atmega8 microcontroller.
 
 The hardware is licensed under GPLv3. It was inspired by and draws from other open-source ESC projects including [AfroESC](https://code.google.com/p/afrodevices/), [WiiESC](https://code.google.com/p/wii-esc/), and others. We owe a big thanks to everyone who has shared their open-source ESC designs and firmware.
