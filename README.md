@@ -75,3 +75,9 @@ avrdude -c stk500v2 -b 9600 -P [programmer port] -p m8 -U flash:w:bluesc.hex:i
 To be completed.
 
 ##Releases
+
+##Video
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=qJa0dBeoZHA
+" target="_blank"><img src="http://img.youtube.com/vi/qJa0dBeoZHA/0.jpg" 
+alt="BlueESC Prototype Test Video" width="240" height="180" border="10" /></a>
