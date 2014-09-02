@@ -9928,15 +9928,15 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </classes>
 <parts>
 <part name="U1" library="SparkFun-DigitalIC" deviceset="ATMEGA168" device="" value="ATMEGA168"/>
-<part name="R1" library="SparkFun-Resistors" deviceset="33KOHM1/10W1%(0603)" device="" value="33K"/>
-<part name="R2" library="SparkFun-Resistors" deviceset="33KOHM1/10W1%(0603)" device="" value="33K"/>
-<part name="R3" library="SparkFun-Resistors" deviceset="33KOHM1/10W1%(0603)" device="" value="33K"/>
-<part name="R4" library="SparkFun-Resistors" deviceset="33KOHM1/10W1%(0603)" device="" value="33K"/>
-<part name="R5" library="SparkFun-Resistors" deviceset="33KOHM1/10W1%(0603)" device="" value="33K"/>
-<part name="R6" library="SparkFun-Resistors" deviceset="33KOHM1/10W1%(0603)" device="" value="33K"/>
-<part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10K"/>
-<part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10K"/>
-<part name="R9" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="R1" library="SparkFun-Resistors" deviceset="33KOHM1/10W1%(0603)" device="" value="3.3K"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="33KOHM1/10W1%(0603)" device="" value="3.3K"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="33KOHM1/10W1%(0603)" device="" value="3.3K"/>
+<part name="R4" library="SparkFun-Resistors" deviceset="33KOHM1/10W1%(0603)" device="" value="18K"/>
+<part name="R5" library="SparkFun-Resistors" deviceset="33KOHM1/10W1%(0603)" device="" value="18K"/>
+<part name="R6" library="SparkFun-Resistors" deviceset="33KOHM1/10W1%(0603)" device="" value="18K"/>
+<part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="3.3K"/>
+<part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="3.3K"/>
+<part name="R9" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="3.3K"/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="0.01uF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="0.01uF"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="0.01uF"/>
@@ -9994,7 +9994,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="Q4" library="transistor-fet-bobstarr" deviceset="SI7370" device=""/>
 <part name="Q5" library="transistor-fet-bobstarr" deviceset="SI7370" device=""/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="Q6" library="transistor-fet-bobstarr" deviceset="SI7370" device=""/>
+<part name="Q6" library="transistor-fet-bobstarr" deviceset="SI7370" device="" value="SiR158DP"/>
 <part name="Q7" library="transistor-fet-bobstarr" deviceset="SI7370" device=""/>
 <part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="Q8" library="transistor-fet-bobstarr" deviceset="SI7370" device=""/>
