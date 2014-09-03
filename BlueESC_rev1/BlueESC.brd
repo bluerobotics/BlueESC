@@ -1137,9 +1137,9 @@ Please make sure your boards conform to these design rules.</description>
 <element name="D3" library="SparkFun-DiscreteSemi" package="SOD-323" value="Schottky" x="31.27375" y="29.05125" rot="R270">
 <attribute name="PROD_ID" value="DIO-09646" x="31.27375" y="29.05125" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C10" library="SparkFun-Capacitors" package="0805" value="1.2uF" x="1.42875" y="23.33625" rot="R270"/>
-<element name="C11" library="SparkFun-Capacitors" package="0805" value="1.2uF" x="19.685" y="31.75" rot="R270"/>
-<element name="C12" library="SparkFun-Capacitors" package="0805" value="1.2uF" x="31.4325" y="32.22625" rot="R90"/>
+<element name="C10" library="SparkFun-Capacitors" package="0805" value="1uF" x="1.42875" y="23.33625" rot="R270"/>
+<element name="C11" library="SparkFun-Capacitors" package="0805" value="1uF" x="19.685" y="31.75" rot="R270"/>
+<element name="C12" library="SparkFun-Capacitors" package="0805" value="1uF" x="31.4325" y="32.22625" rot="R90"/>
 </elements>
 <signals>
 <signal name="SENSE_A">
