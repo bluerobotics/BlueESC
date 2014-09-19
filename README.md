@@ -42,6 +42,18 @@ The second revision is designed to work with the [BlueRobotics T100 Thruster](ht
 * Enclosure diameter: 40.3 mm (1.59")
 * Enclosure length: 13 mm (0.5")
 
+##Firmware Compilation
+
+The BlueESC uses the tgy firmware located in the BlueRobotics fork.
+
+*Mac:* (Uses Homebrew)
+
+```bash
+brew update
+brew install avra
+make bluesc.hex
+```
+
 ##Initial Firmware Flashing
 
 The BlueESC can be flashed using any AVR ISP programmer.
