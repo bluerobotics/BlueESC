@@ -19,7 +19,7 @@ We also thank Bernhard Konze and SimonK for the [tgy firmware](http://github.com
 * Very simple: No battery-eliminator-circuit (BEC), no limiting
 * N-Channel MOSFETs
 
-##Rev.1
+##Rev.1-2
 
 The first revision was designed as a proof-of-concept. It is designed on a simple 2-layer PCB and space is not highly optimized. It exposes all interfaces and programming pins.
 
@@ -30,17 +30,17 @@ The first revision was designed as a proof-of-concept. It is designed on a simpl
 * Dimensions: 41mm x 57mm (1.60" x 2.25")
 * MOSFETs: Vishay SiR158DP (N-channel)
 
-##Rev.2
+##Rev.3
 
-The second revision is designed to work with the [BlueRobotics T100 Thruster](http://www.bluerobotics.com/thruster/). It is highly compact, 4-layers, and is potted in an aluminum enclosure that acts as a heat sink. 
+The second revision is designed to work with the [BlueRobotics T100 Thruster](http://www.bluerobotics.com/thruster/). It is highly compact and is potted in an aluminum enclosure that acts as a heat sink. The board is built with two 2-layer boards, one for the power electronics and one for logic. The boards are connected by headers. This allows components to be placed on three sides, simplifies design, and minimizes cost.
 
 ###Specifications (*subject to change*)
 
-* 5-16 volt input
+* 5-24 volt input
 * 25 amps continuous current (air)
 * 35 amps continuous current (water)
 * Enclosure diameter: 40.3 mm (1.59")
-* Enclosure length: 13 mm (0.5")
+* Enclosure length: 18 mm (0.7")
 
 ##Firmware Compilation
 
