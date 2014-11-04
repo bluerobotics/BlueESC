@@ -35,6 +35,11 @@ The first revision was designed as a proof-of-concept. It is designed on a simpl
 
 The second revision is designed to work with the [BlueRobotics T100 Thruster](http://www.bluerobotics.com/thruster/). It is highly compact and is potted in an aluminum enclosure that acts as a heat sink. The board is built with two 2-layer boards, one for the power electronics and one for logic. The boards are connected by headers. This allows components to be placed on three sides, simplifies design, and minimizes cost.
 
+###Features
+
+* Hall effect current sense IC
+* Thermistor temperature sensor
+
 ###Specifications (*subject to change*)
 
 * 5-22 volt input
