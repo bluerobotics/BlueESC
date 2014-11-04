@@ -31,9 +31,11 @@ The first revision was designed as a proof-of-concept. It is designed on a simpl
 * Dimensions: 41mm x 57mm (1.60" x 2.25")
 * MOSFETs: Vishay SiR158DP (N-channel)
 
-##Rev.3
+##Rev.3-4
 
-The second revision is designed to work with the [BlueRobotics T100 Thruster](http://www.bluerobotics.com/thruster/). It is highly compact and is potted in an aluminum enclosure that acts as a heat sink. The board is built with two 2-layer boards, one for the power electronics and one for logic. The boards are connected by headers. This allows components to be placed on three sides, simplifies design, and minimizes cost.
+The second major revision is designed to work with the [BlueRobotics T100 Thruster](http://www.bluerobotics.com/thruster/). It is highly compact and is potted in an aluminum enclosure that acts as a heat sink. The board is built with two 2-layer boards, one for the power electronics and one for logic. The boards are connected by headers. This allows components to be placed on three sides, simplifies design, and minimizes cost.
+
+![BlueESC Rev3 Prototype](https://raw.githubusercontent.com/bluerobotics/BlueESC/master/images/blueesc-rev3-1.jpg "BlueESC Rev3 Prototype")
 
 ###Features
 
@@ -42,7 +44,7 @@ The second revision is designed to work with the [BlueRobotics T100 Thruster](ht
 
 ###Specifications (*subject to change*)
 
-* 5-22 volt input
+* 6-22 volt input
 * 25 amps continuous current (air)
 * 35 amps continuous current (water)
 * 400 uF decoupling capacitance
