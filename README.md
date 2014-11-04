@@ -84,7 +84,31 @@ avrdude -c stk500v2 -b 9600 -P [programmer port] -p m8 -U flash:w:bluesc.hex:i
 
 ##I2C Commands and Address
 
-To be completed.
+The I2C message format allows speed and direction to be set and voltage, current, rpm, temperature, and status to be requested.
+
+###Speed Command
+* cmd: Command, sent as int16_t. Acceptable values in range -400 to 400.
+
+####Bytes
+* Byte 0: cmd_h
+* Byte 1: cmd_l
+
+###Data Request
+* voltage: Sent as uint16_t in millivolts
+* current: Sent as uint16_t in centiamps
+* pulses: Sent as uint16_t in pulses per second. Divide this value by "magnet pole count" to get rev/s.
+* temperature: Sent as uint8_t in degrees C
+* status: TBD, bitmap sent as uint8_t
+
+####Bytes
+* Byte 0: voltage_h
+* Byte 1: voltage_l
+* Byte 2: current_h
+* Byte 3: current_l
+* Byte 4: pulses_h
+* Byte 5: pulses_l
+* Byte 6: temperature
+* Byte 7: status
 
 ##Releases
 
