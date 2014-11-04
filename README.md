@@ -11,12 +11,13 @@ We also thank Bernhard Konze and SimonK for the [tgy firmware](http://github.com
 
 ##Features
 
-* Atmega8 microcontroller
+* Atmega8/168 microcontroller
 * PWM, I2C, and serial signal interfaces
-* 5-16 volt input (2-4s lipo)
+* 5-22 volt input (2-5s lipo)
 * Reprogrammable via PWM pin using bootloader
 * Status and warning LED indicators
-* Very simple: No battery-eliminator-circuit (BEC), no limiting
+* Sensors for voltage, current, and temperature
+* No battery-eliminator-circuit (BEC)
 * N-Channel MOSFETs
 
 ##Rev.1-2
@@ -34,13 +35,19 @@ The first revision was designed as a proof-of-concept. It is designed on a simpl
 
 The second revision is designed to work with the [BlueRobotics T100 Thruster](http://www.bluerobotics.com/thruster/). It is highly compact and is potted in an aluminum enclosure that acts as a heat sink. The board is built with two 2-layer boards, one for the power electronics and one for logic. The boards are connected by headers. This allows components to be placed on three sides, simplifies design, and minimizes cost.
 
+###Features
+
+* Hall effect current sense IC
+* Thermistor temperature sensor
+
 ###Specifications (*subject to change*)
 
-* 5-24 volt input
+* 5-22 volt input
 * 25 amps continuous current (air)
 * 35 amps continuous current (water)
-* Enclosure diameter: 40.3 mm (1.59")
-* Enclosure length: 18 mm (0.7")
+* 400 uF decoupling capacitance
+* Enclosure diameter: 40 mm (1.58")
+* Enclosure length: 18.5 mm (0.73")
 
 ##Firmware Compilation
 
