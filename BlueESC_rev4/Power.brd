@@ -140,7 +140,7 @@
 <text x="15.39875" y="17.62125" size="1.27" layer="52" rot="MR270">A</text>
 <text x="15.5575" y="27.305" size="1.27" layer="52" rot="MR270">B</text>
 <text x="15.39875" y="37.30625" size="1.27" layer="52" rot="MR270">C</text>
-<text x="14.2875" y="14.2875" size="0.6096" layer="51">BLUESC-ELEC-POWER-X1A</text>
+<text x="14.2875" y="14.2875" size="0.6096" layer="51">BLUESC-ELEC-POWER-X1B</text>
 <text x="20.79625" y="9.2075" size="1.6764" layer="51">-</text>
 <text x="30.32125" y="10.95375" size="1.6764" layer="51" rot="R180">+</text>
 <text x="15.24" y="23.1775" size="0.8128" layer="51">A</text>
@@ -321,7 +321,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="P$1" x="0" y="0" dx="3" dy="2" layer="1"/>
 </package>
 <package name="PAD-PTH-MED-1">
-<pad name="P$1" x="0" y="0" drill="1.4" diameter="2.54"/>
+<pad name="P$1" x="0" y="0" drill="1.5" diameter="2.54"/>
 </package>
 <package name="12-WFQFN">
 <wire x1="-0.66736875" y1="-0.74468125" x2="-0.66736875" y2="-0.09468125" width="0" layer="48"/>

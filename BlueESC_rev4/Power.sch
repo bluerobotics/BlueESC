@@ -1908,7 +1908,7 @@ by R. Vogg  15.March.2002</description>
 <smd name="P$1" x="0" y="0" dx="3" dy="1.5" layer="1"/>
 </package>
 <package name="PAD-PTH-MED-1">
-<pad name="P$1" x="0" y="0" drill="1.4" diameter="2.54"/>
+<pad name="P$1" x="0" y="0" drill="1.5" diameter="2.54"/>
 </package>
 <package name="12-WFQFN">
 <wire x1="-0.66736875" y1="-0.74468125" x2="-0.66736875" y2="-0.09468125" width="0" layer="48"/>
