@@ -139,7 +139,7 @@
 <wire x1="14.30375" y1="41.14656875" x2="12.90375" y2="38.34656875" width="0" layer="20" curve="53.130102"/>
 <hole x="23.495" y="10.795" drill="2.8"/>
 <hole x="27.305" y="10.795" drill="2.8"/>
-<text x="31.115" y="43.02125" size="0.6096" layer="51" rot="R180">BLUESC-ELEC-LOGIC-X1A</text>
+<text x="31.115" y="43.02125" size="0.6096" layer="51" rot="R180">BLUESC-ELEC-LOGIC-X1B</text>
 <text x="23.495" y="20.6375" size="0.6096" layer="51" rot="R180">GND</text>
 <text x="25.0825" y="20.6375" size="0.6096" layer="51" rot="R180">5V</text>
 <text x="27.305" y="20.6375" size="0.6096" layer="51" rot="R180">PWM</text>
@@ -865,8 +865,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R12" library="SparkFun-Resistors" package="0603-RES" value="10K" x="16.8275" y="32.54375" rot="R180"/>
 <element name="R13" library="SparkFun-Resistors" package="0603-RES" value="10K" x="23.92375" y="14.57" rot="R270"/>
 <element name="R14" library="SparkFun-Resistors" package="0603-RES" value="10K" x="26.46375" y="14.605" rot="R270"/>
-<element name="R15" library="SparkFun" package="0603-RES" value="22" x="21.55" y="14.56" rot="R90"/>
-<element name="R16" library="SparkFun" package="0603-RES" value="22" x="28.94" y="14.5575" rot="R90"/>
+<element name="R15" library="SparkFun" package="0603-RES" value="150" x="21.55" y="14.56" rot="R90"/>
+<element name="R16" library="SparkFun" package="0603-RES" value="100" x="28.94" y="14.5575" rot="R90"/>
 <element name="R2" library="SparkFun-Resistors" package="0603-RES" value="47K" x="20.0025" y="26.19375" rot="R180"/>
 <element name="R3" library="SparkFun-Resistors" package="0603-RES" value="47K" x="19.52625" y="28.8925" rot="R90"/>
 <element name="R4" library="SparkFun-Resistors" package="0603-RES" value="47K" x="16.8275" y="23.01875" rot="R180"/>
