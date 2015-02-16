@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.00625" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -129,10 +129,10 @@
 </layers>
 <board>
 <plain>
-<text x="2.49555" y="8.88365" size="1.27" layer="52" rot="MR270">A</text>
-<text x="2.6543" y="18.5674" size="1.27" layer="52" rot="MR270">B</text>
+<text x="5.03555" y="8.24865" size="1.27" layer="52" rot="MR270">A</text>
+<text x="4.08305" y="17.2974" size="1.27" layer="52" rot="MR270">B</text>
 <text x="2.49555" y="28.56865" size="1.27" layer="52" rot="MR270">C</text>
-<text x="20.8407" y="28.8417" size="0.6096" layer="52" rot="MR270">BLUESC-ELEC-POWER-X1B</text>
+<text x="20.8407" y="28.8417" size="0.6096" layer="52" rot="MR270">BLUESC-ELEC-POWER-X1C</text>
 <text x="7.89305" y="0.4699" size="1.6764" layer="51">-</text>
 <text x="17.41805" y="2.21615" size="1.6764" layer="51" rot="R180">+</text>
 <text x="2.3368" y="14.4399" size="0.8128" layer="51">A</text>
@@ -320,10 +320,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <library name="BR-Eagle-Library">
 <packages>
 <package name="PAD-PTH-18AWG-1">
-<pad name="P$1" x="0" y="0" drill="1.3" diameter="2.1844"/>
+<pad name="P$1" x="0" y="0" drill="1.5" diameter="2.54"/>
 </package>
 <package name="PAD-PTH-MED-1">
-<pad name="P$1" x="0" y="0" drill="1.6" diameter="2.794"/>
+<pad name="P$1" x="0" y="0" drill="2.2" diameter="3.302"/>
 </package>
 <package name="12-WFQFN">
 <wire x1="-0.66736875" y1="-0.74468125" x2="-0.66736875" y2="-0.09468125" width="0" layer="48"/>
@@ -827,11 +827,11 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R32" library="SparkFun-Resistors" package="0603-RES" value="10K" x="15.6718" y="31.9024"/>
 <element name="R33" library="SparkFun-Resistors" package="0603-RES" value="10K NTC" x="12.4968" y="24.9174" rot="MR90"/>
 <element name="U$5" library="BR-Eagle-Library" package="PAD-PTH-18AWG-1" value="PAD18AWG" x="2.0701" y="8.6995" rot="MR270"/>
-<element name="U$6" library="BR-Eagle-Library" package="PAD-PTH-18AWG-1" value="PAD18AWG" x="3.4163" y="18.6563" rot="MR90"/>
-<element name="U$7" library="BR-Eagle-Library" package="PAD-PTH-18AWG-1" value="PAD18AWG" x="2.2479" y="29.2989" rot="MR270"/>
+<element name="U$6" library="BR-Eagle-Library" package="PAD-PTH-18AWG-1" value="PAD18AWG" x="3.57505" y="18.6563" rot="MR90"/>
+<element name="U$7" library="BR-Eagle-Library" package="PAD-PTH-18AWG-1" value="PAD18AWG" x="1.9304" y="29.6164" rot="MR270"/>
 <element name="C11" library="SparkFun-Capacitors" package="EIA7343" value="100uF" x="8.6868" y="9.0424"/>
-<element name="U$1" library="BR-Eagle-Library" package="PAD-PTH-MED-1" value="PADPTH-MED" x="14.4018" y="2.0574"/>
-<element name="U$2" library="BR-Eagle-Library" package="PAD-PTH-MED-1" value="PADPTH-MED" x="10.5918" y="2.0574"/>
+<element name="U$1" library="BR-Eagle-Library" package="PAD-PTH-MED-1" value="PADPTH-MED" x="14.56055" y="2.53365"/>
+<element name="U$2" library="BR-Eagle-Library" package="PAD-PTH-MED-1" value="PADPTH-MED" x="10.43305" y="2.53365"/>
 <element name="U$3" library="BR-Eagle-Library" package="12-WFQFN" value="ACS7XX12-WFQFN" x="17.73555" y="5.2324" rot="MR180"/>
 <element name="U$4" library="BR-Eagle-Library" package="HEADER-2MM-6POS" value="HEADER-62MM" x="1.0668" y="12.8524" rot="R90"/>
 <element name="U$8" library="BR-Eagle-Library" package="HEADER-2MM-12POS" value="HEADER-122MM" x="23.2918" y="7.1374" rot="R90"/>
@@ -882,16 +882,15 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="5.1943" y1="12.37615" x2="8.21055" y2="12.37615" width="2.54" layer="16"/>
 <wire x1="4.8768" y1="31.9024" x2="8.3693" y2="31.9024" width="2.286" layer="16"/>
 <polygon width="0.3048" layer="16" isolate="0.254" thermals="no">
-<vertex x="12.4968" y="-2.3876"/>
-<vertex x="12.4968" y="4.2799"/>
+<vertex x="12.33805" y="-2.3876"/>
+<vertex x="12.33805" y="4.2799"/>
 <vertex x="-1.4732" y="4.2799"/>
 <vertex x="-1.4732" y="-2.3876"/>
 </polygon>
-<via x="8.52805" y="3.6449" extent="1-16" drill="0.5"/>
-<via x="7.0993" y="3.6449" extent="1-16" drill="0.5"/>
-<via x="7.89305" y="2.53365" extent="1-16" drill="0.5"/>
-<via x="6.4643" y="2.53365" extent="1-16" drill="0.5"/>
-<via x="12.065" y="3.8481" extent="1-16" drill="0.5"/>
+<via x="7.4168" y="3.6449" extent="1-16" drill="0.5"/>
+<via x="5.98805" y="3.6449" extent="1-16" drill="0.5"/>
+<via x="7.4168" y="2.3749" extent="1-16" drill="0.5"/>
+<via x="5.98805" y="2.3749" extent="1-16" drill="0.5"/>
 <via x="2.9718" y="13.1699" extent="1-16" drill="0.5"/>
 <via x="2.9718" y="11.8999" extent="1-16" drill="0.5"/>
 <via x="4.08305" y="13.1699" extent="1-16" drill="0.5"/>
@@ -909,12 +908,12 @@ Please make sure your boards conform to these design rules.</description>
 <via x="7.7343" y="33.8074" extent="1-16" drill="0.5"/>
 <via x="4.71805" y="32.69615" extent="1-16" drill="0.5"/>
 <polygon width="0.3048" layer="1" isolate="0.254">
-<vertex x="12.4968" y="-1.1176"/>
+<vertex x="12.33805" y="-1.1176"/>
 <vertex x="-2.7432" y="-1.1176"/>
 <vertex x="-2.7432" y="36.9824"/>
 <vertex x="9.6393" y="36.9824"/>
-<vertex x="9.6393" y="7.1374"/>
-<vertex x="12.4968" y="4.2799"/>
+<vertex x="9.6393" y="6.97865"/>
+<vertex x="12.33805" y="4.43865"/>
 </polygon>
 <wire x1="12.4968" y1="24.0674" x2="12.12305" y2="24.0674" width="0.3048" layer="16"/>
 <wire x1="12.12305" y1="24.0674" x2="11.5443" y2="23.48865" width="0.3048" layer="16"/>
@@ -975,8 +974,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$4" pad="P$2"/>
 <polygon width="0.3048" layer="16" isolate="0.254" thermals="no">
 <vertex x="13.7668" y="5.5499"/>
-<vertex x="12.4968" y="5.5499"/>
-<vertex x="12.4968" y="4.9149"/>
+<vertex x="12.33805" y="5.5499"/>
+<vertex x="12.33805" y="4.9149"/>
 <vertex x="-1.4732" y="4.9149"/>
 <vertex x="-1.4732" y="10.6299"/>
 <vertex x="11.2268" y="10.6299"/>
@@ -1017,7 +1016,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="13.7668" y1="17.13865" x2="13.4493" y2="16.82115" width="0.3048" layer="1"/>
 <via x="13.4493" y="16.82115" extent="1-16" drill="0.5"/>
 <wire x1="13.4493" y1="16.82115" x2="12.8143" y2="17.2974" width="0.3048" layer="16"/>
-<wire x1="3.4163" y1="18.6563" x2="1.8293" y2="17.6149" width="0.3048" layer="16"/>
+<wire x1="3.57505" y1="18.6563" x2="1.8293" y2="17.6149" width="0.3048" layer="16"/>
 <wire x1="1.8293" y1="17.6149" x2="1.0668" y2="16.8524" width="0.3048" layer="16"/>
 </signal>
 <signal name="PHASE_C">
@@ -1042,7 +1041,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="11.06805" y="30.3149" extent="1-16" drill="0.5"/>
 <wire x1="11.06805" y1="30.3149" x2="11.06805" y2="29.6799" width="0.3048" layer="16"/>
 <wire x1="11.06805" y1="29.6799" x2="12.8143" y2="29.6799" width="0.3048" layer="16"/>
-<wire x1="2.2479" y1="29.2989" x2="3.9243" y2="25.8699" width="0.3048" layer="16"/>
+<wire x1="1.9304" y1="29.6164" x2="3.9243" y2="25.8699" width="0.3048" layer="16"/>
 <wire x1="3.9243" y1="25.8699" x2="2.3368" y2="24.44115" width="0.3048" layer="16"/>
 <wire x1="2.3368" y1="24.44115" x2="2.3368" y2="20.28115" width="0.3048" layer="16"/>
 <wire x1="2.3368" y1="20.28115" x2="1.0668" y2="18.8524" width="0.3048" layer="16"/>
@@ -1326,8 +1325,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$3" pad="IP+1"/>
 <contactref element="U$3" pad="IP+2"/>
 <polygon width="0.3048" layer="16" isolate="0.254" thermals="no">
-<vertex x="13.1318" y="-0.64135"/>
-<vertex x="13.1318" y="4.9149"/>
+<vertex x="12.97305" y="-0.64135"/>
+<vertex x="12.97305" y="4.9149"/>
 <vertex x="18.8468" y="4.9149"/>
 <vertex x="18.8468" y="-2.3876"/>
 <vertex x="16.3068" y="-1.1176"/>
@@ -1337,8 +1336,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C16" pad="A"/>
 <contactref element="C17" pad="A"/>
 <polygon width="0.3048" layer="1" isolate="0.254">
-<vertex x="13.1318" y="-1.1176"/>
-<vertex x="13.1318" y="4.43865"/>
+<vertex x="12.97305" y="-1.1176"/>
+<vertex x="12.97305" y="4.5974"/>
 <vertex x="10.2743" y="7.29615"/>
 <vertex x="10.2743" y="30.9499"/>
 <vertex x="13.7668" y="30.9499"/>
@@ -1347,9 +1346,8 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="18.8468" y="4.9149"/>
 <vertex x="18.8468" y="-1.1176"/>
 </polygon>
-<via x="13.716" y="4.29895" extent="1-16" drill="0.5"/>
-<via x="15.0368" y="4.29895" extent="1-16" drill="0.5"/>
-<via x="16.9418" y="2.3749" extent="1-16" drill="0.5"/>
+<via x="17.73555" y="1.9177" extent="1-16" drill="0.5"/>
+<via x="16.9418" y="3.16865" extent="1-16" drill="0.5"/>
 </signal>
 <signal name="VCC5V-1">
 <contactref element="U$4" pad="P$6"/>

@@ -880,8 +880,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R12" library="SparkFun-Resistors" package="0603-RES" value="10K" x="3.9243" y="23.80615" rot="R180"/>
 <element name="R13" library="SparkFun-Resistors" package="0603-RES" value="10K" x="11.02055" y="5.8324" rot="R270"/>
 <element name="R14" library="SparkFun-Resistors" package="0603-RES" value="10K" x="13.56055" y="5.8674" rot="R270"/>
-<element name="R15" library="SparkFun" package="0603-RES" value="150" x="8.6468" y="5.8224" rot="R90"/>
-<element name="R16" library="SparkFun" package="0603-RES" value="100" x="16.0368" y="5.8199" rot="R90"/>
+<element name="R15" library="SparkFun" package="0603-RES" value="2.2K" x="8.6468" y="5.8224" rot="R90"/>
+<element name="R16" library="SparkFun" package="0603-RES" value="150" x="16.0368" y="5.8199" rot="R90"/>
 <element name="R2" library="SparkFun-Resistors" package="0603-RES" value="47K" x="7.0993" y="17.45615" rot="R180"/>
 <element name="R3" library="SparkFun-Resistors" package="0603-RES" value="47K" x="6.62305" y="20.1549" rot="R90"/>
 <element name="R4" library="SparkFun-Resistors" package="0603-RES" value="47K" x="3.9243" y="14.28115" rot="R180"/>
