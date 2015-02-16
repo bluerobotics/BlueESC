@@ -77,6 +77,8 @@ The fuses should be set per the instructions in the [tgy](http://github.com/sim-
 avrdude -c [programmer] -p m8 -U lfuse:w:0x3f:m -U hfuse:w:0xca:m
 ```
 
+The Rev4 version of the board does not include an ISP header or pads. The microcontroller must be flashed with a special tool that connect directly to the microcontroller pins. Make sure that the board is powered when programming.
+
 ##Firmware Flashing Through Bootloader
 
 Once the ESC has had the firmware (including bootloader) flashed the first time, it can be reprogrammed subsequently through the PWM input pin using a programmer like the [Turnigy USB Linker](http://www.hobbyking.com/hobbyking/store/__10628__turnigy_usb_linker_for_aquastar_super_brain.html) or the [AfroESC Programmer](http://www.hobbyking.com/hobbyking/store/__39437__afro_esc_usb_programming_tool.html). This can be done through the Makefile in the **tgy** project as follows.
