@@ -97,29 +97,35 @@ avrdude -c stk500v2 -b 9600 -P [programmer port] -p m8 -U flash:w:bluesc.hex:i
 
 The I2C message format allows speed and direction to be set and voltage, current, rpm, temperature, and status to be requested.
 
-###Speed Command
-* cmd: Command, sent as int16_t. Acceptable values in range -400 to 400.
+###Speed Command (Register 0x00-0x01)
+* cmd: Command, sent as uint16_t. Least significant 15 bits are speed, 0-32767 and MSB is direction
+  * Forward: 0-32767
+  * Reverse: 65535-32767
 
 ####Bytes
-* Byte 0: cmd_h
-* Byte 1: cmd_l
+* Byte 0: throttle_h
+* Byte 1: throttle_l
 
-###Data Request
-* voltage: Sent as uint16_t in millivolts
-* current: Sent as uint16_t in centiamps
-* pulses: Sent as uint16_t in pulses per second. Divide this value by "magnet pole count" to get rev/s.
-* temperature: Sent as uint8_t in degrees C
-* status: TBD, bitmap sent as uint8_t
+###Sensor Data (Register 0x02-0x0A)
+* pulse_count: Commutation pulses since last request. Sent as uint16_t.
+  * Calculate rpm with pulse_count/dt*60/motor_pole_count
+* voltage: ADC measurement scaled to 16 bits
+  * Calculate voltage with voltage/2016
+* temperature: ADC measurement scaled to 16 bits
+  * Calculate temperature with the Steinhart equation
+* current: ADC measurement scaled to 16 bits
+  * Calculate current with (current-32767)/891
 
 ####Bytes
-* Byte 0: voltage_h
-* Byte 1: voltage_l
-* Byte 2: current_h
-* Byte 3: current_l
-* Byte 4: pulses_h
-* Byte 5: pulses_l
-* Byte 6: temperature
-* Byte 7: status
+* Byte 0: pulse_count_h
+* Byte 1: pulse_count_l
+* Byte 2: voltage_h
+* Byte 3: voltage_l
+* Byte 4: temperature_h
+* Byte 5: temperature_l
+* Byte 6: current_h
+* Byte 7: current_l
+* Byte 8: 0xab (identifier to check if ESC is alive)
 
 ##Releases
 
