@@ -98,9 +98,9 @@ avrdude -c stk500v2 -b 9600 -P [programmer port] -p m8 -U flash:w:bluesc.hex:i
 The I2C message format allows speed and direction to be set and voltage, current, rpm, temperature, and status to be requested.
 
 ###Speed Command (Register 0x00-0x01)
-* cmd: Command, sent as uint16_t. Least significant 15 bits are speed, 0-32767 and MSB is direction
-  * Forward: 0-32767
-  * Reverse: 65535-32767
+* cmd: Command, sent as int16_t. Full range, negative for reverse, positive for forward.
+  * Forward: 0 to 32767
+  * Reverse: 0 to -32767
 
 ####Bytes
 * Byte 0: throttle_h
