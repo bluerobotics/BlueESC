@@ -122,9 +122,15 @@ v1.0 - Rev5. Currently shipping.
 
 ##Video
 
+I2C Demonstration:
+
 [![I2C Demonstration of BlueESC](http://img.youtube.com/vi/3BH41H-kpA8/0.jpg)](https://www.youtube.com/watch?v=3BH41H-kpA8)
 
+Testing of Final Prototype:
+
 [![Final Prototype of BlueESC](http://img.youtube.com/vi/g5yOUzKvsxc/0.jpg)](https://www.youtube.com/watch?v=g5yOUzKvsxc)
+
+Testing of First Prototype:
 
 [![First Test of BlueESC](http://img.youtube.com/vi/qJa0dBeoZHA/0.jpg)](http://www.youtube.com/watch?feature=player_embedded&v=qJa0dBeoZHA)
 
