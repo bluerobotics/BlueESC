@@ -11,49 +11,38 @@ We also thank Bernhard Konze and SimonK for the [tgy firmware](http://github.com
 
 ##Features
 
-* Atmega8/168 microcontroller
-* PWM, I2C, and serial signal interfaces
+* Atmega8 microcontroller
+* PWM and I2C signal interfaces
 * 5-22 volt input (2-5s lipo)
-* Reprogrammable via PWM pin using bootloader
+* Reprogrammable via PWM pin using bootloader (usblinker)
 * Status and warning LED indicators
-* Sensors for voltage, current, and temperature
+* Sensors for voltage, current, temperature, and RPM
 * No battery-eliminator-circuit (BEC)
 * N-Channel MOSFETs
 
-##Rev.1-2
+##Current Version: Rev. 5
 
-The first revision was designed as a proof-of-concept. It is designed on a simple 2-layer PCB and space is not highly optimized. It exposes all interfaces and programming pins.
-
-###Specifications
-
-* 5-16 volt input (2-4s lipo)
-* 25 amps continuous current (*not yet tested*)
-* Dimensions: 41mm x 57mm (1.60" x 2.25")
-* MOSFETs: Vishay SiR158DP (N-channel)
-
-##Rev.3-4
-
-The second major revision is designed to work with the [BlueRobotics T100 Thruster](http://www.bluerobotics.com/thruster/). It is highly compact and is potted in an aluminum enclosure that acts as a heat sink. The board is built with two 2-layer boards, one for the power electronics and one for logic. The boards are connected by headers. This allows components to be placed on three sides, simplifies design, and minimizes cost.
+This major revision is designed to work with the [BlueRobotics T100 Thruster](http://www.bluerobotics.com/thruster/). It is highly compact and is potted in an aluminum enclosure that acts as a heat sink. The board is built with two 2-layer boards, one for the power electronics and one for logic. The boards are connected by headers. This allows components to be placed on three sides, simplifies design, and minimizes cost.
 
 ![BlueESC Rev3 Prototype](https://raw.githubusercontent.com/bluerobotics/BlueESC/master/images/blueesc-rev3-1.jpg "BlueESC Rev3 Prototype")
 
 ###Features
 
-* Hall effect current sense IC
-* Thermistor temperature sensor
+* Hall effect current sense IC (ACS711EX)
+* Thermistor temperature sensor (10K)
 
-###Specifications (*subject to change*)
+###Specifications
 
 * 6-22 volt input
 * 25 amps continuous current (air)
-* 35 amps continuous current (water)
+* 35+ amps continuous current (water)
 * 400 uF decoupling capacitance
 * Enclosure diameter: 40 mm (1.58")
 * Enclosure length: 18.5 mm (0.73")
 
 ##Firmware Compilation
 
-The BlueESC uses the tgy firmware located in the BlueRobotics fork.
+The BlueESC uses the [tgy firmware located in the BlueRobotics fork](https://github.com/bluerobotics/tgy).
 
 *Mac:* (Uses Homebrew)
 
@@ -77,11 +66,11 @@ The fuses should be set per the instructions in the [tgy](http://github.com/sim-
 avrdude -c [programmer] -p m8 -U lfuse:w:0x3f:m -U hfuse:w:0xca:m
 ```
 
-The Rev4 version of the board does not include an ISP header or pads. The microcontroller must be flashed with a special tool that connect directly to the microcontroller pins. Make sure that the board is powered when programming.
+The Rev5 version of the board does not include an ISP header or pads. The microcontroller must be flashed with a special tool that connects directly to the microcontroller pins. Make sure that the board is powered when programming.
 
 ##Firmware Flashing Through Bootloader
 
-Once the ESC has had the firmware (including bootloader) flashed the first time, it can be reprogrammed subsequently through the PWM input pin using a programmer like the [Turnigy USB Linker](http://www.hobbyking.com/hobbyking/store/__10628__turnigy_usb_linker_for_aquastar_super_brain.html) or the [AfroESC Programmer](http://www.hobbyking.com/hobbyking/store/__39437__afro_esc_usb_programming_tool.html). This can be done through the Makefile in the **tgy** project as follows.
+Once the ESC has had the firmware (including bootloader) flashed the first time, it can be reprogrammed subsequently through the PWM input pin using a programmer like the [Turnigy USB Linker](http://www.hobbyking.com/hobbyking/store/__10628__turnigy_usb_linker_for_aquastar_super_brain.html). This can be done through the Makefile in the **tgy** project as follows.
 
 ```bash
 make program_tgy_bluesc
@@ -90,7 +79,7 @@ make program_tgy_bluesc
 It can also be done with avrdude and the compiled hex files as follows.
 
 ```bash
-avrdude -c stk500v2 -b 9600 -P [programmer port] -p m8 -U flash:w:bluesc.hex:i
+avrdude -c stk500v2 -b 19200 -P [programmer port] -p m8 -U flash:w:bluesc.hex:i
 ```
 
 ##I2C Commands and Address
@@ -128,6 +117,8 @@ The I2C message format allows speed and direction to be set and voltage, current
 * Byte 8: 0xab (identifier to check if ESC is alive)
 
 ##Releases
+
+v0.13 - Rev5 shipping. Currently shipping.
 
 ##Video
 
