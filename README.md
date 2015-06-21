@@ -118,7 +118,7 @@ The I2C message format allows speed and direction to be set and voltage, current
 
 ##Releases
 
-v0.13 - Rev5 shipping. Currently shipping.
+v1.0 - Rev5. Currently shipping.
 
 ##Video
 
