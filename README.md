@@ -84,6 +84,8 @@ avrdude -c stk500v2 -b 19200 -P [programmer port] -p m8 -U flash:w:bluesc.hex:i
 
 ##I2C Commands and Address
 
+*Please also see our [Arduino library for I2C ESC control](https://github.com/bluerobotics/Arduino_I2C_ESC).*
+
 The I2C message format allows speed and direction to be set and voltage, current, rpm, temperature, and status to be requested.
 
 ###Speed Command (Register 0x00-0x01)
