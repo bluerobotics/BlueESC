@@ -1,0 +1,28 @@
+[Eagle]
+Version="07 01 00"
+Platform="Mac OS X"
+Serial="7225EAADEF-LS-WLM-1CS"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="/Applications/EAGLE-6.3.0/lbr/MCP2515_MT.lbr"
+UsedLibrary="/Applications/EAGLE-6.3.0/lbr/MCP2551-RJehangir.lbr.lbr"
+UsedLibrary="/Applications/EAGLE-6.3.0/lbr/RJehangir.lbr"
+UsedLibrary="/Users/rustyj110/Dropbox/The-J-&-R-Project/Electronics/BR-Eagle-Library.lbr"
+UsedLibrary="/Applications/EAGLE-6.3.0/lbr/SparkFun-Aesthetics.lbr"
+UsedLibrary="/Applications/EAGLE-6.3.0/lbr/SparkFun-Capacitors.lbr"
+UsedLibrary="/Applications/EAGLE-6.3.0/lbr/SparkFun-DigitalIC.lbr"
+UsedLibrary="/Applications/EAGLE-6.3.0/lbr/SparkFun-Electromechanical.lbr"
+UsedLibrary="/Applications/EAGLE-6.3.0/lbr/SparkFun-Resistors.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="0 23 957 1135"
+State=2
+Number=0
+
+[Desktop]
+Screen="1920 1200"
+Window="Win_1"
