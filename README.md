@@ -24,7 +24,7 @@ We also thank Bernhard Konze and SimonK for the [tgy firmware](http://github.com
 
 This major revision is designed to work with the [BlueRobotics T100 Thruster](http://www.bluerobotics.com/thruster/). It is highly compact and is potted in an aluminum enclosure that acts as a heat sink. The board is built with two 2-layer boards, one for the power electronics and one for logic. The boards are connected by headers. This allows components to be placed on three sides, simplifies design, and minimizes cost.
 
-![BlueESC Rev3 Prototype](https://raw.githubusercontent.com/bluerobotics/BlueESC/master/images/blueesc-rev3-1.jpg "BlueESC Rev3 Prototype")
+![BlueESC Rev5 Board](https://raw.githubusercontent.com/bluerobotics/BlueESC/master/images/blueesc-rev5-2.jpg "BlueESC Rev5 Without Enclosure")
 
 ###Features
 
