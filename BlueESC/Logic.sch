@@ -7981,6 +7981,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED1" library="BR-Eagle-Library" deviceset="LED" device="3X2-RA" value="BLUE"/>
 <part name="LED2" library="BR-Eagle-Library" deviceset="LED" device="3X2-RA" value="RED"/>
+<part name="R18" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
+<part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8037,6 +8039,7 @@ Internal ENable pullup</text>
 <text x="119.38" y="-38.1" size="2.1844" layer="94" ratio="13">Current low-pass filter, cutoff at 3.4 Hz</text>
 <text x="208.28" y="35.56" size="1.778" layer="97">Red: APDA3020LSECK/J3-PF</text>
 <text x="208.28" y="30.48" size="1.778" layer="97">Blue: APDA3020VBC/D</text>
+<text x="119.38" y="81.28" size="2.1844" layer="94" ratio="13">PWM Pull-Down</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="119.38" y="137.16"/>
@@ -8088,6 +8091,8 @@ Internal ENable pullup</text>
 <instance part="GND2" gate="1" x="175.26" y="-33.02"/>
 <instance part="LED1" gate="G$1" x="162.56" y="12.7"/>
 <instance part="LED2" gate="G$1" x="187.96" y="12.7"/>
+<instance part="R18" gate="G$1" x="147.32" y="68.58" rot="R90"/>
+<instance part="GND6" gate="1" x="147.32" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -8244,6 +8249,11 @@ Internal ENable pullup</text>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="-30.48" x2="175.26" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="55.88" x2="147.32" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PHASE_A" class="0">
@@ -8529,6 +8539,11 @@ Internal ENable pullup</text>
 <pinref part="U$11" gate="G$1" pin="PAD"/>
 <wire x1="-5.08" y1="-10.16" x2="5.08" y2="-10.16" width="0.1524" layer="91"/>
 <label x="-5.08" y="-10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="73.66" x2="147.32" y2="83.82" width="0.1524" layer="91"/>
+<label x="147.32" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM_CH" class="0">
