@@ -130,10 +130,10 @@
 <board>
 <plain>
 <text x="9.04875" y="4.92125" size="0.6096" layer="52" rot="MR90">BLUEESC-ELEC-LOGIC-R1.1</text>
-<text x="11.38555" y="11.8999" size="0.6096" layer="51" rot="R180">GND</text>
-<text x="13.92555" y="11.8999" size="0.6096" layer="51" rot="R180">PWM</text>
-<text x="16.46555" y="11.8999" size="0.6096" layer="51" rot="R180">SDA</text>
-<text x="19.00555" y="11.8999" size="0.6096" layer="51" rot="R180">SCL</text>
+<text x="11.38555" y="11.8999" size="0.6096" layer="51" rot="R180">BLK</text>
+<text x="13.92555" y="11.8999" size="0.6096" layer="51" rot="R180">R/Y</text>
+<text x="16.46555" y="11.8999" size="0.6096" layer="51" rot="R180">WHT</text>
+<text x="19.00555" y="11.8999" size="0.6096" layer="51" rot="R180">GRN</text>
 <text x="15.83055" y="4.9149" size="0.8128" layer="52" rot="MR90">BlueRobotics</text>
 <text x="14.24305" y="4.9149" size="0.6096" layer="52" rot="MR90">Designed by R. Jehangir</text>
 <text x="12.33805" y="4.9149" size="0.8128" layer="52" rot="MR90">8/15</text>
@@ -1175,6 +1175,12 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="11.5325" y1="5.715" x2="11.37375" y2="5.55625" width="0.4064" layer="16"/>
 <wire x1="10.21625" y1="4.445" x2="10.2625" y2="4.445" width="0.3048" layer="1"/>
 <wire x1="10.2625" y1="4.445" x2="11.37375" y2="5.55625" width="0.3048" layer="1"/>
+<wire x1="13.6525" y1="26.51125" x2="11.7475" y2="26.51125" width="1.016" layer="1"/>
+<wire x1="13.81125" y1="27.14625" x2="13.81125" y2="25.7175" width="1.016" layer="1"/>
+<wire x1="13.81125" y1="25.7175" x2="11.58875" y2="25.7175" width="1.016" layer="1"/>
+<wire x1="13.81125" y1="27.14625" x2="13.6525" y2="27.14625" width="1.016" layer="1"/>
+<wire x1="13.6525" y1="27.14625" x2="13.6525" y2="26.51125" width="1.016" layer="1"/>
+<wire x1="13.89545" y1="27.30115" x2="13.81125" y2="27.14625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RX">
 <contactref element="U1" pad="30"/>

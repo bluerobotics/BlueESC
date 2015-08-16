@@ -7988,9 +7988,9 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <sheet>
 <plain>
 <wire x1="55.88" y1="122.428" x2="55.88" y2="121.92" width="0.2032" layer="97"/>
-<wire x1="40.64" y1="195.58" x2="205.74" y2="195.58" width="0.1524" layer="94"/>
-<wire x1="205.74" y1="195.58" x2="205.74" y2="88.9" width="0.1524" layer="94"/>
-<wire x1="205.74" y1="88.9" x2="40.64" y2="88.9" width="0.1524" layer="94"/>
+<wire x1="40.64" y1="195.58" x2="218.44" y2="195.58" width="0.1524" layer="94"/>
+<wire x1="218.44" y1="195.58" x2="218.44" y2="88.9" width="0.1524" layer="94"/>
+<wire x1="218.44" y1="88.9" x2="40.64" y2="88.9" width="0.1524" layer="94"/>
 <wire x1="40.64" y1="88.9" x2="40.64" y2="195.58" width="0.1524" layer="94"/>
 <text x="43.18" y="190.5" size="2.1844" layer="94" ratio="13">MCU</text>
 <wire x1="167.64" y1="86.36" x2="205.74" y2="86.36" width="0.1524" layer="94"/>
@@ -8031,18 +8031,25 @@ Internal ENable pullup</text>
 <wire x1="96.52" y1="-45.72" x2="96.52" y2="-101.6" width="0.1524" layer="94"/>
 <wire x1="96.52" y1="-101.6" x2="-10.16" y2="-101.6" width="0.1524" layer="94"/>
 <wire x1="-10.16" y1="-101.6" x2="-10.16" y2="-45.72" width="0.1524" layer="94"/>
-<text x="-7.62" y="-50.8" size="2.1844" layer="94" ratio="13">Interface between top and bottom board (ignore for now)</text>
+<text x="-7.62" y="-50.8" size="2.1844" layer="94" ratio="13">Interface between top and bottom board</text>
 <wire x1="205.74" y1="-7.62" x2="116.84" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="116.84" y1="-7.62" x2="116.84" y2="-40.64" width="0.1524" layer="94"/>
-<wire x1="116.84" y1="-40.64" x2="205.74" y2="-40.64" width="0.1524" layer="94"/>
-<wire x1="205.74" y1="-40.64" x2="205.74" y2="-7.62" width="0.1524" layer="94"/>
-<text x="119.38" y="-38.1" size="2.1844" layer="94" ratio="13">Current low-pass filter, cutoff at 3.4 Hz</text>
-<text x="208.28" y="35.56" size="1.778" layer="97">Red: APDA3020LSECK/J3-PF</text>
-<text x="208.28" y="30.48" size="1.778" layer="97">Blue: APDA3020VBC/D</text>
-<text x="119.38" y="81.28" size="2.1844" layer="94" ratio="13">PWM Pull-Down</text>
+<wire x1="116.84" y1="-7.62" x2="116.84" y2="-43.18" width="0.1524" layer="94"/>
+<wire x1="116.84" y1="-43.18" x2="205.74" y2="-43.18" width="0.1524" layer="94"/>
+<wire x1="205.74" y1="-43.18" x2="205.74" y2="-7.62" width="0.1524" layer="94"/>
+<text x="119.38" y="-40.64" size="2.1844" layer="94" ratio="13">Current-sense low-pass filter, cutoff at 3.4 Hz</text>
+<text x="165.1" y="38.1" size="1.778" layer="97">Red: APDA3020LSECK/J3-PF</text>
+<text x="165.1" y="35.56" size="1.778" layer="97">Blue: APDA3020VBC/D</text>
+<text x="116.84" y="81.28" size="2.1844" layer="94" ratio="13">PWM Pull-Down</text>
+<text x="101.854" y="165.608" size="1.778" layer="97">ATMEGA8A</text>
+<wire x1="114.3" y1="86.36" x2="165.1" y2="86.36" width="0.1524" layer="94"/>
+<wire x1="165.1" y1="86.36" x2="165.1" y2="43.18" width="0.1524" layer="94"/>
+<wire x1="165.1" y1="43.18" x2="114.3" y2="43.18" width="0.1524" layer="94"/>
+<wire x1="114.3" y1="43.18" x2="114.3" y2="86.36" width="0.1524" layer="94"/>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="119.38" y="137.16"/>
+<instance part="U1" gate="G$1" x="119.38" y="137.16" smashed="yes">
+<attribute name="NAME" x="101.6" y="99.06" size="1.778" layer="95"/>
+</instance>
 <instance part="R1" gate="G$1" x="93.98" y="251.46"/>
 <instance part="R2" gate="G$1" x="93.98" y="241.3"/>
 <instance part="R3" gate="G$1" x="93.98" y="231.14"/>
@@ -8060,8 +8067,8 @@ Internal ENable pullup</text>
 <instance part="C5" gate="G$1" x="53.34" y="152.4"/>
 <instance part="GND4" gate="1" x="53.34" y="144.78"/>
 <instance part="GND5" gate="1" x="91.44" y="93.98"/>
-<instance part="R13" gate="G$1" x="182.88" y="162.56" rot="R90"/>
-<instance part="R14" gate="G$1" x="193.04" y="162.56" rot="R90"/>
+<instance part="R13" gate="G$1" x="190.5" y="162.56" rot="R90"/>
+<instance part="R14" gate="G$1" x="200.66" y="162.56" rot="R90"/>
 <instance part="GND9" gate="1" x="50.8" y="109.22"/>
 <instance part="Y1" gate="G$1" x="71.12" y="119.38" rot="R270"/>
 <instance part="R15" gate="G$1" x="162.56" y="22.86" rot="R90"/>
@@ -8371,14 +8378,14 @@ Internal ENable pullup</text>
 </segment>
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="182.88" y1="167.64" x2="182.88" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="167.64" x2="190.5" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="182.88" y1="170.18" x2="187.96" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="170.18" x2="193.04" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="170.18" x2="193.04" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="170.18" x2="187.96" y2="177.8" width="0.1524" layer="91"/>
-<junction x="187.96" y="170.18"/>
-<label x="187.96" y="175.26" size="1.778" layer="95"/>
+<wire x1="190.5" y1="170.18" x2="195.58" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="170.18" x2="200.66" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="170.18" x2="200.66" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="170.18" x2="195.58" y2="177.8" width="0.1524" layer="91"/>
+<junction x="195.58" y="170.18"/>
+<label x="195.58" y="175.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
@@ -8504,10 +8511,10 @@ Internal ENable pullup</text>
 <net name="SDA" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PC4(ADC4/SDA)"/>
-<wire x1="144.78" y1="152.4" x2="182.88" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="152.4" x2="190.5" y2="152.4" width="0.1524" layer="91"/>
 <label x="154.94" y="152.4" size="1.778" layer="95"/>
 <pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="152.4" x2="182.88" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="152.4" x2="190.5" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="PAD"/>
@@ -8520,8 +8527,8 @@ Internal ENable pullup</text>
 <pinref part="U1" gate="G$1" pin="PC5(ADC5/SCL)"/>
 <label x="154.94" y="149.86" size="1.778" layer="95"/>
 <pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="149.86" x2="193.04" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="149.86" x2="193.04" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="149.86" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="149.86" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$10" gate="G$1" pin="PAD"/>
