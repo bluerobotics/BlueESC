@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -6635,8 +6635,8 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 </polygon>
 </package>
 <package name="SMT-LED-3X2-RA">
-<smd name="1" x="-1.5" y="0" dx="2" dy="1" layer="1"/>
-<smd name="2" x="1.5" y="0" dx="2" dy="1" layer="1"/>
+<smd name="2" x="-1.5" y="0" dx="2" dy="1" layer="1"/>
+<smd name="1" x="1.5" y="0" dx="2" dy="1" layer="1"/>
 <wire x1="-1.1" y1="0.7" x2="-1" y2="1.5" width="0.127" layer="21"/>
 <wire x1="-1" y1="1.5" x2="1" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1" y1="1.5" x2="1.1" y2="0.7" width="0.127" layer="21"/>
@@ -7958,7 +7958,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="Y1" library="SparkFun" deviceset="RESONATOR" device="SMD"/>
 <part name="R15" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="1K"/>
-<part name="R16" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
+<part name="R16" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="4.7K"/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -7981,7 +7981,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED1" library="BR-Eagle-Library" deviceset="LED" device="3X2-RA" value="BLUE"/>
 <part name="LED2" library="BR-Eagle-Library" deviceset="LED" device="3X2-RA" value="RED"/>
-<part name="R18" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
+<part name="R18" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="470K"/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>

@@ -122,6 +122,8 @@ The I2C message format allows speed and direction to be set and voltage, current
 
 v1.0 - Rev5. Currently shipping.
 
+v1.1 - Rev6. Added PWM pull-down resistor and low pass filter for current sense. Switched to SMT LEDs. No changes to Power Board.
+
 ##Video
 
 I2C Demonstration:

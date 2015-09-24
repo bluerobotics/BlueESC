@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.00625" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.00625" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -136,7 +136,7 @@
 <text x="19.00555" y="11.8999" size="0.6096" layer="51" rot="R180">GRN</text>
 <text x="15.83055" y="4.9149" size="0.8128" layer="52" rot="MR90">BlueRobotics</text>
 <text x="14.24305" y="4.9149" size="0.6096" layer="52" rot="MR90">Designed by R. Jehangir</text>
-<text x="12.33805" y="4.9149" size="0.8128" layer="52" rot="MR90">8/15</text>
+<text x="12.33805" y="4.9149" size="0.8128" layer="52" rot="MR90">9/15</text>
 <text x="1.4986" y="6.53415" size="0.8128" layer="51" rot="R90">BlueESC</text>
 <text x="5.03555" y="5.8674" size="0.6096" layer="51" ratio="13">B</text>
 <text x="19.00555" y="5.8674" size="0.6096" layer="51" ratio="13">R</text>
@@ -144,7 +144,7 @@
 <text x="13.92555" y="8.0899" size="0.6096" layer="51" rot="R180">PWM</text>
 <text x="16.46555" y="8.0899" size="0.6096" layer="51" rot="R180">SDA</text>
 <text x="19.00555" y="8.0899" size="0.6096" layer="51" rot="R180">SCL</text>
-<text x="1.3843" y="24.44115" size="0.8128" layer="51" ratio="13" rot="R90">rev6</text>
+<text x="1.3843" y="24.44115" size="0.8128" layer="51" ratio="13" rot="R90">rev7</text>
 <wire x1="-0.003740625" y1="29.59865" x2="-0.003740625" y2="6.39865" width="0" layer="20"/>
 <wire x1="0.11395" y1="30.49865" x2="-0.00374375" y2="29.59865" width="0" layer="20" curve="14.900586"/>
 <wire x1="0.11395" y1="30.49865" x2="24.278565625" y2="30.49865" width="0" layer="20"/>
@@ -539,8 +539,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="21"/>
 </package>
 <package name="SMT-LED-3X2-RA">
-<smd name="1" x="-1.5" y="0" dx="2" dy="1" layer="1"/>
-<smd name="2" x="1.5" y="0" dx="2" dy="1" layer="1"/>
+<smd name="2" x="-1.5" y="0" dx="2" dy="1" layer="1"/>
+<smd name="1" x="1.5" y="0" dx="2" dy="1" layer="1"/>
 <wire x1="-1.1" y1="0.7" x2="-1" y2="1.5" width="0.127" layer="21"/>
 <wire x1="-1" y1="1.5" x2="1" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1" y1="1.5" x2="1.1" y2="0.7" width="0.127" layer="21"/>
@@ -873,7 +873,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R13" library="SparkFun-Resistors" package="0603-RES" value="10K" x="13.335" y="6.6675" rot="R180"/>
 <element name="R14" library="SparkFun-Resistors" package="0603-RES" value="10K" x="13.335" y="4.445" rot="R180"/>
 <element name="R15" library="SparkFun" package="0603-RES" value="1K" x="9.36625" y="4.445"/>
-<element name="R16" library="SparkFun" package="0603-RES" value="10K" x="16.19555" y="5.8199" rot="R90"/>
+<element name="R16" library="SparkFun" package="0603-RES" value="4.7K" x="16.19555" y="5.8199" rot="R90"/>
 <element name="R2" library="SparkFun-Resistors" package="0603-RES" value="47K" x="7.0993" y="17.45615" rot="R180"/>
 <element name="R3" library="SparkFun-Resistors" package="0603-RES" value="47K" x="6.62305" y="20.1549" rot="R90"/>
 <element name="R4" library="SparkFun-Resistors" package="0603-RES" value="47K" x="3.9243" y="14.28115" rot="R180"/>
@@ -902,7 +902,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R17" library="SparkFun" package="0603-RES" value="47K" x="20.47875" y="12.85875" rot="R180"/>
 <element name="LED1" library="BR-Eagle-Library" package="SMT-LED-3X2-RA" value="BLUE" x="4.7625" y="5.23875" rot="R150.3"/>
 <element name="LED2" library="BR-Eagle-Library" package="SMT-LED-3X2-RA" value="RED" x="19.685" y="5.23875" rot="R210.2"/>
-<element name="R18" library="SparkFun" package="0603-RES" value="10K" x="9.36625" y="6.6675"/>
+<element name="R18" library="SparkFun" package="0603-RES" value="470K" x="9.36625" y="6.6675"/>
 </elements>
 <signals>
 <signal name="SENSE_A">
@@ -1008,7 +1008,7 @@ Please make sure your boards conform to these design rules.</description>
 </polygon>
 <via x="21.22805" y="19.36115" extent="1-16" drill="0.5"/>
 <via x="6.62305" y="27.61615" extent="1-16" drill="0.5"/>
-<via x="6.7818" y="6.66115" extent="1-16" drill="0.5"/>
+<via x="8.4643" y="10.56615" extent="1-16" drill="0.5"/>
 <via x="10.43305" y="25.2349" extent="1-16" drill="0.5"/>
 <via x="9.0043" y="29.6799" extent="1-16" drill="0.5"/>
 <via x="10.2743" y="29.6799" extent="1-16" drill="0.5"/>
@@ -1176,11 +1176,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="10.21625" y1="4.445" x2="10.2625" y2="4.445" width="0.3048" layer="1"/>
 <wire x1="10.2625" y1="4.445" x2="11.37375" y2="5.55625" width="0.3048" layer="1"/>
 <wire x1="13.6525" y1="26.51125" x2="11.7475" y2="26.51125" width="1.016" layer="1"/>
-<wire x1="13.81125" y1="27.14625" x2="13.81125" y2="25.7175" width="1.016" layer="1"/>
+<wire x1="13.81125" y1="27.14625" x2="13.81125" y2="27" width="1.016" layer="1"/>
+<wire x1="13.81125" y1="27" x2="13.81125" y2="25.7175" width="1.016" layer="1"/>
 <wire x1="13.81125" y1="25.7175" x2="11.58875" y2="25.7175" width="1.016" layer="1"/>
 <wire x1="13.81125" y1="27.14625" x2="13.6525" y2="27.14625" width="1.016" layer="1"/>
 <wire x1="13.6525" y1="27.14625" x2="13.6525" y2="26.51125" width="1.016" layer="1"/>
-<wire x1="13.89545" y1="27.30115" x2="13.81125" y2="27.14625" width="0" layer="19" extent="1-1"/>
+<wire x1="13.89545" y1="27.30115" x2="13.89545" y2="27.0842" width="0.3048" layer="1"/>
+<wire x1="13.89545" y1="27.0842" x2="13.81125" y2="27" width="0.3048" layer="1"/>
 </signal>
 <signal name="RX">
 <contactref element="U1" pad="30"/>
@@ -1242,13 +1244,12 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="11.5443" y1="12.8524" x2="11.8618" y2="12.5349" width="0.3048" layer="16"/>
 <wire x1="11.8618" y1="12.5349" x2="11.8618" y2="11.2649" width="0.3048" layer="16"/>
 <wire x1="11.8618" y1="11.2649" x2="11.5443" y2="10.9474" width="0.3048" layer="16"/>
-<wire x1="11.5443" y1="10.9474" x2="8.0518" y2="10.9474" width="0.3048" layer="16"/>
-<via x="8.0518" y="10.9474" extent="1-16" drill="0.5"/>
-<wire x1="8.0518" y1="10.9474" x2="8.0518" y2="9.6774" width="0.3048" layer="1"/>
-<wire x1="8.0518" y1="9.6774" x2="4.5593" y2="6.1849" width="0.3048" layer="1"/>
 <contactref element="LED1" pad="2"/>
-<wire x1="4.5593" y1="6.1849" x2="3.14205" y2="6.1849" width="0.3048" layer="1"/>
-<wire x1="3.14205" y1="6.1849" x2="3.45955" y2="5.9819375" width="0.3048" layer="1"/>
+<wire x1="11.5443" y1="10.9474" x2="11.10615" y2="10.9474" width="0.3048" layer="16"/>
+<wire x1="11.10615" y1="10.9474" x2="6.19125" y2="6.0325" width="0.3048" layer="16"/>
+<via x="6.19125" y="6.0325" extent="1-16" drill="0.5"/>
+<wire x1="6.19125" y1="6.0325" x2="6.19125" y2="4.6213625" width="0.3048" layer="1"/>
+<wire x1="6.19125" y1="4.6213625" x2="6.065446875" y2="4.495559375" width="0.3048" layer="1"/>
 </signal>
 <signal name="TEMP_ADC">
 <contactref element="U$16" pad="P$5"/>
@@ -1363,17 +1364,22 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$16">
 <contactref element="R15" pad="1"/>
 <contactref element="LED1" pad="1"/>
-<wire x1="8.51625" y1="4.445" x2="6.11600625" y2="4.445" width="0.3048" layer="1"/>
-<wire x1="6.11600625" y1="4.445" x2="6.065446875" y2="4.495559375" width="0.3048" layer="1"/>
+<wire x1="8.51625" y1="4.445" x2="8.255" y2="4.445" width="0.3048" layer="1"/>
+<wire x1="8.255" y1="4.445" x2="7.3025" y2="5.3975" width="0.3048" layer="1"/>
+<wire x1="7.3025" y1="5.3975" x2="7.3025" y2="6.82625" width="0.3048" layer="1"/>
+<wire x1="7.3025" y1="6.82625" x2="6.985" y2="7.14375" width="0.3048" layer="1"/>
+<wire x1="6.985" y1="7.14375" x2="5.715" y2="7.14375" width="0.3048" layer="1"/>
+<wire x1="5.715" y1="7.14375" x2="4.7625" y2="6.19125" width="0.3048" layer="1"/>
+<wire x1="4.7625" y1="6.19125" x2="3.6688625" y2="6.19125" width="0.3048" layer="1"/>
+<wire x1="3.6688625" y1="6.19125" x2="3.45955" y2="5.9819375" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="R16" pad="1"/>
 <contactref element="LED2" pad="1"/>
 <wire x1="16.19555" y1="4.9699" x2="17.0349" y2="4.9699" width="0.3048" layer="1"/>
 <wire x1="17.0349" y1="4.9699" x2="17.145" y2="5.08" width="0.3048" layer="1"/>
-<wire x1="17.145" y1="5.08" x2="19.84375" y2="6.6675" width="0.3048" layer="1"/>
-<wire x1="19.84375" y1="6.6675" x2="20.3071875" y2="6.6675" width="0.3048" layer="1"/>
-<wire x1="20.3071875" y1="6.6675" x2="20.981409375" y2="5.993278125" width="0.3048" layer="1"/>
+<wire x1="17.145" y1="5.08" x2="17.79280625" y2="5.08" width="0.3048" layer="1"/>
+<wire x1="17.79280625" y1="5.08" x2="18.3885875" y2="4.48421875" width="0.3048" layer="1"/>
 </signal>
 <signal name="RESET">
 <contactref element="U1" pad="29"/>
