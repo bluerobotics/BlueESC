@@ -49,7 +49,7 @@ The BlueESC uses the [tgy firmware located in the BlueRobotics fork](https://git
 ```bash
 brew update
 brew install avra
-make bluesc.hex
+make blueesc.hex
 ```
 
 ##Initial Firmware Flashing
@@ -57,7 +57,7 @@ make bluesc.hex
 The BlueESC can be flashed using any AVR ISP programmer.
 
 ```bash
-avrdude -c [programmer] -p m8 -U flash:w:bluesc.hex:i 
+avrdude -c [programmer] -p m8 -U flash:w:blueesc.hex:i 
 ```
 
 The fuses should be set per the instructions in the [tgy](http://github.com/sim-/tgy) instructions.
