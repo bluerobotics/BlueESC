@@ -73,13 +73,13 @@ The Rev5 version of the board does not include an ISP header or pads. The microc
 Once the ESC has had the firmware (including bootloader) flashed the first time, it can be reprogrammed subsequently through the PWM input pin using a programmer like the [Turnigy USB Linker](http://www.hobbyking.com/hobbyking/store/__10628__turnigy_usb_linker_for_aquastar_super_brain.html). This can be done through the Makefile in the **tgy** project as follows.
 
 ```bash
-make program_tgy_bluesc
+make program_tgy_blueesc
 ```
 
 It can also be done with avrdude and the compiled hex files as follows.
 
 ```bash
-avrdude -c stk500v2 -b 19200 -P [programmer port] -p m8 -U flash:w:bluesc.hex:i
+avrdude -c stk500v2 -b 19200 -P [programmer port] -p m8 -U flash:w:blueesc.hex:i
 ```
 
 ##I2C Commands and Address
