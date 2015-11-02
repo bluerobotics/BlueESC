@@ -6293,117 +6293,6 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </deviceset>
 </devicesets>
 </library>
-<library name="transistor-fet-bobstarr">
-<description>&lt;b&gt;Field Effect Transistors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;p&gt;
-&lt;p&gt;
-Symbols changed according to IEC617&lt;p&gt; 
-All types, packages and assignment to symbols and pins checked&lt;p&gt;
-Package outlines partly checked&lt;p&gt;
-&lt;p&gt;
-JFET = junction FET&lt;p&gt;
-IGBT-x = insulated gate bipolar transistor&lt;p&gt;
-x=N: NPN; x=P: PNP&lt;p&gt;
-IGFET-mc-nnn; (IGFET=insulated gate field effect transistor)&lt;P&gt;
-m=D: depletion mode (Verdr&amp;auml;ngungstyp)&lt;p&gt;
-m=E: enhancement mode (Anreicherungstyp)&lt;p&gt;
-c: N=N-channel; P=P-Channel&lt;p&gt;
-nnn=GDS:  gate, drain, source&lt;p&gt;
-2GDS: 2 x gate, drain, source&lt;p&gt;
-GnDS: gate, n x drain, source&lt;p&gt;
-GDSB: gate, drain, source, bulk&lt;p&gt;
-&lt;p&gt;
-by R. Vogg  15.March.2002</description>
-<packages>
-<package name="POWERPAK-SO-08">
-<description>&lt;b&gt;PowerPAK SO-8&lt;/b&gt;&lt;p&gt;</description>
-<wire x1="-2.8575" y1="-3.175" x2="-2.8575" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="-2.8575" y1="3.175" x2="2.8575" y2="3.175" width="0.2032" layer="51"/>
-<wire x1="2.8575" y1="3.175" x2="2.8575" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="2.8575" y1="-3.175" x2="-2.8575" y2="-3.175" width="0.2032" layer="51"/>
-<circle x="-1.905" y="-4.2863" radius="0.3175" width="0" layer="21"/>
-<smd name="3" x="0.635" y="-2.8575" dx="0.635" dy="1.778" layer="1" rot="R180"/>
-<smd name="4" x="1.905" y="-2.8575" dx="0.635" dy="1.778" layer="1" rot="R180"/>
-<smd name="2" x="-0.635" y="-2.8575" dx="0.635" dy="1.778" layer="1" rot="R180"/>
-<smd name="1" x="-1.905" y="-2.8575" dx="0.635" dy="1.778" layer="1" rot="R180"/>
-<smd name="5-8" x="0" y="1.905" dx="5.08" dy="4.318" layer="1"/>
-<text x="-3.4925" y="-1.905" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="2.2225" y="-0.635" size="0.8128" layer="27" ratio="10" rot="R180">&gt;VALUE</text>
-<rectangle x1="1.6669" y1="-3.3338" x2="2.1431" y2="-3.175" layer="51" rot="R180"/>
-<rectangle x1="0.3969" y1="-3.3338" x2="0.8731" y2="-3.175" layer="51" rot="R180"/>
-<rectangle x1="-0.8731" y1="-3.3338" x2="-0.3969" y2="-3.175" layer="51" rot="R180"/>
-<rectangle x1="-2.1431" y1="-3.3338" x2="-1.6669" y2="-3.175" layer="51" rot="R180"/>
-<rectangle x1="1.6669" y1="3.175" x2="2.1431" y2="3.3338" layer="51"/>
-<rectangle x1="0.3969" y1="3.175" x2="0.8731" y2="3.3338" layer="51"/>
-<rectangle x1="-0.8731" y1="3.175" x2="-0.3969" y2="3.3338" layer="51"/>
-<rectangle x1="-2.1431" y1="3.175" x2="-1.6669" y2="3.3338" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="IGFET-EN-GD3S">
-<wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="0.762" x2="0" y2="0" width="0.4064" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-0.762" width="0.4064" layer="94"/>
-<wire x1="0" y1="3.683" x2="0" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.397" width="0.4064" layer="94"/>
-<wire x1="0" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1.397" x2="0" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-3.683" width="0.4064" layer="94"/>
-<wire x1="-1.143" y1="2.54" x2="-1.143" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="4.445" y1="2.54" x2="4.445" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="4.445" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.905" y1="0.635" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-0.635" x2="0.635" y2="0" width="0.254" layer="94"/>
-<wire x1="0.635" y1="0" x2="1.905" y2="0.635" width="0.254" layer="94"/>
-<wire x1="4.445" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
-<circle x="2.54" y="-2.54" radius="0.127" width="0.4064" layer="94"/>
-<circle x="2.54" y="2.54" radius="0.127" width="0.4064" layer="94"/>
-<text x="-11.43" y="0" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-11.43" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<rectangle x1="3.937" y1="0.635" x2="4.953" y2="0.889" layer="94"/>
-<pin name="D" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="S1" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
-<pin name="S2" x="5.08" y="-5.08" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="S3" x="7.62" y="-5.08" visible="off" length="short" direction="pas" rot="R180"/>
-<polygon width="0.1524" layer="94">
-<vertex x="4.445" y="0.635"/>
-<vertex x="3.937" y="-0.127"/>
-<vertex x="4.953" y="-0.127"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="1.905" y="-0.635"/>
-<vertex x="0.635" y="0"/>
-<vertex x="1.905" y="0.635"/>
-</polygon>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SI7370" prefix="Q">
-<description>&lt;b&gt;N-Channel MOSFET&lt;/b&gt; - 60v</description>
-<gates>
-<gate name="G$1" symbol="IGFET-EN-GD3S" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="POWERPAK-SO-08">
-<connects>
-<connect gate="G$1" pin="D" pad="5-8"/>
-<connect gate="G$1" pin="G" pad="4"/>
-<connect gate="G$1" pin="S1" pad="1"/>
-<connect gate="G$1" pin="S2" pad="2"/>
-<connect gate="G$1" pin="S3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="BR-Eagle-Library">
 <packages>
 <package name="PAD-2X3MM">
@@ -8849,6 +8738,87 @@ LETTER landscape</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="BlueRobotics-Main">
+<packages>
+<package name="TDSON-8">
+<smd name="S2" x="-0.66" y="-2.5" dx="0.6" dy="1.3" layer="1"/>
+<smd name="S1" x="-1.98" y="-2.5" dx="0.6" dy="1.3" layer="1"/>
+<smd name="S3" x="0.66" y="-2.5" dx="0.6" dy="1.3" layer="1"/>
+<smd name="G" x="1.98" y="-2.5" dx="0.6" dy="1.3" layer="1"/>
+<smd name="D" x="0" y="1.8" dx="4" dy="4.6" layer="1" rot="R90"/>
+<wire x1="-2.75" y1="3.5" x2="-2.75" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="2.75" y1="3.5" x2="2.75" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="-2.75" x2="-2.5" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-2.75" x2="-1.125" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="1.125" y1="-2.75" x2="1.5" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="2.75" y1="-2.75" x2="2.5" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="3.5" x2="-2.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="2.75" y1="3.5" x2="2.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-0.125" y1="-2.75" x2="0.125" y2="-2.75" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="IGFET-EN-GD3S">
+<wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.762" x2="0" y2="0" width="0.4064" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-0.762" width="0.4064" layer="94"/>
+<wire x1="0" y1="3.683" x2="0" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.397" width="0.4064" layer="94"/>
+<wire x1="0" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.397" x2="0" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-3.683" width="0.4064" layer="94"/>
+<wire x1="-1.143" y1="2.54" x2="-1.143" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="4.445" y1="2.54" x2="4.445" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="4.445" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-0.635" x2="0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0" x2="1.905" y2="0.635" width="0.254" layer="94"/>
+<wire x1="4.445" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.127" width="0.4064" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.127" width="0.4064" layer="94"/>
+<text x="-11.43" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-11.43" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<rectangle x1="3.937" y1="0.635" x2="4.953" y2="0.889" layer="94"/>
+<pin name="D" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="S" x="7.62" y="-5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<polygon width="0.1524" layer="94">
+<vertex x="4.445" y="0.635"/>
+<vertex x="3.937" y="-0.127"/>
+<vertex x="4.953" y="-0.127"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="1.905" y="-0.635"/>
+<vertex x="0.635" y="0"/>
+<vertex x="1.905" y="0.635"/>
+</polygon>
+<wire x1="5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MOSFET-NCHANNEL">
+<gates>
+<gate name="G$1" symbol="IGFET-EN-GD3S" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TDSON-8">
+<connects>
+<connect gate="G$1" pin="D" pad="D"/>
+<connect gate="G$1" pin="G" pad="G"/>
+<connect gate="G$1" pin="S" pad="S1 S2 S3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8883,14 +8853,14 @@ LETTER landscape</description>
 <part name="R31" library="SparkFun-Resistors" deviceset="33KOHM1/10W1%(0603)" device="" value="100"/>
 <part name="R32" library="SparkFun-Resistors" deviceset="33KOHM1/10W1%(0603)" device="" value="10K"/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
-<part name="Q4" library="transistor-fet-bobstarr" deviceset="SI7370" device=""/>
-<part name="Q5" library="transistor-fet-bobstarr" deviceset="SI7370" device=""/>
+<part name="Q4" library="BlueRobotics-Main" deviceset="MOSFET-NCHANNEL" device=""/>
+<part name="Q5" library="BlueRobotics-Main" deviceset="MOSFET-NCHANNEL" device=""/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="Q6" library="transistor-fet-bobstarr" deviceset="SI7370" device=""/>
-<part name="Q7" library="transistor-fet-bobstarr" deviceset="SI7370" device=""/>
+<part name="Q6" library="BlueRobotics-Main" deviceset="MOSFET-NCHANNEL" device=""/>
+<part name="Q7" library="BlueRobotics-Main" deviceset="MOSFET-NCHANNEL" device=""/>
 <part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="Q8" library="transistor-fet-bobstarr" deviceset="SI7370" device=""/>
-<part name="Q9" library="transistor-fet-bobstarr" deviceset="SI7370" device=""/>
+<part name="Q8" library="BlueRobotics-Main" deviceset="MOSFET-NCHANNEL" device=""/>
+<part name="Q9" library="BlueRobotics-Main" deviceset="MOSFET-NCHANNEL" device=""/>
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C15" library="SparkFun-Capacitors" deviceset="CAP_POL" device="7343" value="100uF"/>
 <part name="C16" library="SparkFun-Capacitors" deviceset="CAP_POL" device="7343" value="100uF"/>
@@ -8902,9 +8872,9 @@ LETTER landscape</description>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD" value="Schottky"/>
 <part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD" value="Schottky"/>
 <part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD" value="Schottky"/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
-<part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF 60V"/>
+<part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF 60V"/>
+<part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF 60V"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C10" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -10100,19 +10070,19 @@ Internal ENable pullup</text>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="Q5" gate="G$1" pin="S3"/>
+<pinref part="Q5" gate="G$1" pin="S"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="48.26" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="48.26" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="Q7" gate="G$1" pin="S3"/>
+<pinref part="Q7" gate="G$1" pin="S"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="132.08" y1="48.26" x2="134.62" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="48.26" x2="134.62" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="Q9" gate="G$1" pin="S3"/>
+<pinref part="Q9" gate="G$1" pin="S"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="215.9" y1="48.26" x2="218.44" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="48.26" x2="218.44" y2="43.18" width="0.1524" layer="91"/>
@@ -10153,7 +10123,7 @@ Internal ENable pullup</text>
 <pinref part="Q5" gate="G$1" pin="D"/>
 <wire x1="43.18" y1="58.42" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="60.96" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="Q4" gate="G$1" pin="S3"/>
+<pinref part="Q4" gate="G$1" pin="S"/>
 <wire x1="50.8" y1="60.96" x2="66.04" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="66.04" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
@@ -10171,7 +10141,7 @@ Internal ENable pullup</text>
 <pinref part="Q7" gate="G$1" pin="D"/>
 <wire x1="127" y1="58.42" x2="127" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="127" y1="60.96" x2="134.62" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="Q6" gate="G$1" pin="S3"/>
+<pinref part="Q6" gate="G$1" pin="S"/>
 <wire x1="134.62" y1="60.96" x2="149.86" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="66.04" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="66.04" x2="134.62" y2="60.96" width="0.1524" layer="91"/>
@@ -10189,7 +10159,7 @@ Internal ENable pullup</text>
 <pinref part="Q9" gate="G$1" pin="D"/>
 <wire x1="210.82" y1="58.42" x2="210.82" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="60.96" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="Q8" gate="G$1" pin="S3"/>
+<pinref part="Q8" gate="G$1" pin="S"/>
 <wire x1="218.44" y1="60.96" x2="233.68" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="66.04" x2="218.44" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="66.04" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
