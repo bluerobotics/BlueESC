@@ -20,7 +20,7 @@ We also thank Bernhard Konze and SimonK for the [tgy firmware](http://github.com
 * No battery-eliminator-circuit (BEC)
 * N-Channel MOSFETs
 
-##Current Version: Rev. 5
+##Current Version: Rev. 7
 
 This major revision is designed to work with the [BlueRobotics T100 Thruster](http://www.bluerobotics.com/thruster/). It is highly compact and is potted in an aluminum enclosure that acts as a heat sink. The board is built with two 2-layer boards, one for the power electronics and one for logic. The boards are connected by headers. This allows components to be placed on three sides, simplifies design, and minimizes cost.
 
