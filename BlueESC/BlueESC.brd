@@ -1287,7 +1287,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R17" library="SparkFun-Resistors" package="0603-RES" value="2.2K" x="19.4818" y="10.3124" rot="R180"/>
 <element name="R18" library="SparkFun-Resistors" package="0603-RES" value="4.7K" x="19.4818" y="8.4074" rot="R180"/>
 <element name="R19" library="SparkFun-Resistors" package="0603-RES" value="100" x="15.6718" y="8.4074" rot="R180"/>
-<element name="R20" library="SparkFun-Resistors" package="0603-RES" value="3.3K 1%" x="1.54305" y="26.34615" rot="R270"/>
+<element name="R20" library="SparkFun-Resistors" package="0603-RES" value="3.3K 1%" x="1.54305" y="26.34615" rot="MR270"/>
 <element name="R21" library="SparkFun-Resistors" package="0603-RES" value="100" x="19.4818" y="12.2174" rot="R180"/>
 <element name="R22" library="SparkFun-Resistors" package="0603-RES" value="10K" x="15.6718" y="12.5349" rot="R180"/>
 <element name="R23" library="SparkFun-Resistors" package="0603-RES" value="2.2K" x="19.4818" y="20.1549" rot="R180"/>
@@ -1558,7 +1558,6 @@ Please make sure your boards conform to these design rules.</description>
 <via x="11.06805" y="30.3149" extent="1-16" drill="0.5"/>
 <wire x1="11.06805" y1="30.3149" x2="11.06805" y2="29.6799" width="0.3048" layer="16"/>
 <wire x1="11.06805" y1="29.6799" x2="12.8143" y2="29.6799" width="0.3048" layer="16"/>
-<wire x1="1.9304" y1="29.6164" x2="3.9243" y2="25.8699" width="0.3048" layer="16"/>
 <wire x1="3.9243" y1="25.8699" x2="2.3368" y2="24.44115" width="0.3048" layer="16"/>
 <wire x1="2.3368" y1="24.44115" x2="2.3368" y2="20.28115" width="0.3048" layer="16"/>
 <wire x1="2.3368" y1="20.28115" x2="1.0668" y2="18.8524" width="0.3048" layer="16"/>
@@ -1627,10 +1626,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="2.9718" y1="24.75865" x2="2.3368" y2="24.12365" width="0.3048" layer="1"/>
 <wire x1="2.3368" y1="24.12365" x2="2.3368" y2="22.1224" width="0.3048" layer="1"/>
 <wire x1="2.3368" y1="22.1224" x2="1.0668" y2="20.8524" width="0.3048" layer="1"/>
-<wire x1="1.54305" y1="27.19615" x2="1.96305" y2="27.19615" width="0.3048" layer="1"/>
-<wire x1="1.96305" y1="27.19615" x2="2.49555" y2="26.66365" width="0.3048" layer="1"/>
-<wire x1="2.49555" y1="26.66365" x2="2.49555" y2="25.2349" width="0.3048" layer="1"/>
-<wire x1="2.49555" y1="25.2349" x2="2.9718" y2="24.75865" width="0.3048" layer="1"/>
+<wire x1="1.54305" y1="27.19615" x2="2.96635" y2="27.19615" width="0.3048" layer="16"/>
+<wire x1="2.96635" y1="27.19615" x2="3.01625" y2="27.14625" width="0.3048" layer="16"/>
+<via x="3.01625" y="27.14625" extent="1-16" drill="0.5"/>
+<wire x1="3.01625" y1="27.14625" x2="3.01625" y2="24.8031" width="0.3048" layer="1"/>
+<wire x1="3.01625" y1="24.8031" x2="2.9718" y2="24.75865" width="0.3048" layer="1"/>
 </signal>
 <signal name="PWM_CH">
 <contactref element="R29" pad="1"/>
@@ -1869,8 +1869,10 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="VCC5V-1">
 <contactref element="U$4" pad="P$6"/>
 <contactref element="R20" pad="2"/>
-<wire x1="1.54305" y1="25.49615" x2="1.54305" y2="23.32865" width="0.3048" layer="1"/>
-<wire x1="1.54305" y1="23.32865" x2="1.0668" y2="22.8524" width="0.254" layer="1"/>
+<wire x1="1.0668" y1="22.8524" x2="1.0668" y2="22.9743" width="0.3048" layer="16"/>
+<wire x1="1.0668" y1="22.9743" x2="1.5875" y2="23.495" width="0.3048" layer="16"/>
+<wire x1="1.5875" y1="23.495" x2="1.5875" y2="25.4517" width="0.3048" layer="16"/>
+<wire x1="1.5875" y1="25.4517" x2="1.54305" y2="25.49615" width="0.3048" layer="16"/>
 </signal>
 <signal name="VCC5V-2">
 <contactref element="U$8" pad="P$3"/>
