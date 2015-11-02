@@ -20,9 +20,9 @@ We also thank Bernhard Konze and SimonK for the [tgy firmware](http://github.com
 * No battery-eliminator-circuit (BEC)
 * N-Channel MOSFETs
 
-##Current Version: Rev. 7
+##Current Generation: Rev. 5-8
 
-This major revision is designed to work with the [BlueRobotics T100 Thruster](http://www.bluerobotics.com/thruster/). It is highly compact and is potted in an aluminum enclosure that acts as a heat sink. The board is built with two 2-layer boards, one for the power electronics and one for logic. The boards are connected by headers. This allows components to be placed on three sides, simplifies design, and minimizes cost.
+The current major revision is designed to work with the [BlueRobotics T100 Thruster](http://www.bluerobotics.com/thruster/). It is highly compact and is potted in an aluminum enclosure that acts as a heat sink. The board is built with two 2-layer boards, one for the power electronics and one for logic. The boards are connected by headers. This allows components to be placed on three sides, simplifies design, and minimizes cost.
 
 ![BlueESC Rev5 Board](https://raw.githubusercontent.com/bluerobotics/BlueESC/master/images/blueesc-rev5-2.jpg "BlueESC Rev5 Without Enclosure")
 
@@ -39,6 +39,12 @@ This major revision is designed to work with the [BlueRobotics T100 Thruster](ht
 * 400 uF decoupling capacitance
 * Enclosure diameter: 40 mm (1.58")
 * Enclosure length: 18.5 mm (0.73")
+
+###Design Files
+
+**Schematic:** [BlueESC.pdf](https://github.com/bluerobotics/BlueESC/raw/master/BlueESC/BlueESC.pdf)
+
+See repository for up-to-date EagleCAD schematic and board layout.
 
 ##Firmware Compilation
 
