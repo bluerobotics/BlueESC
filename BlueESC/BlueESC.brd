@@ -1396,7 +1396,6 @@ Please make sure your boards conform to these design rules.</description>
 <via x="3.6068" y="23.6474" extent="1-16" drill="0.5"/>
 <via x="8.3693" y="23.6474" extent="1-16" drill="0.5"/>
 <via x="7.25805" y="23.6474" extent="1-16" drill="0.5"/>
-<via x="3.44805" y="31.42615" extent="1-16" drill="0.5"/>
 <via x="4.71805" y="31.42615" extent="1-16" drill="0.5"/>
 <via x="9.0043" y="33.8074" extent="1-16" drill="0.5"/>
 <via x="7.7343" y="33.8074" extent="1-16" drill="0.5"/>
